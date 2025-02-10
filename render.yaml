@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: jn-academy
+    env: node
+    buildCommand: npm install # This will install dependencies
+    startCommand: npm start # This will run your backend server
+    plan: free # You can change this to another plan if needed
+    autoDeploy: true # Automatically deploy changes when pushed to GitHub
+    branches:
+      - main # Make sure this matches the branch you want to deploy from

@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: "Times New Roman", Times, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start (left) */
+  gap: 2rem; /* Add spacing between the logo and the links */
+}
+
+.navbar {
+  background-color: #fb8100ff;
+  border-radius: 10px;
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure navbar is on top of other content */
+  width: 100%; /* Ensure it spans across the full width */
+  padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+p {
+  color: rgb(89, 48, 4);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 3.5rem; /* Space between the links */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #db5f23ff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-logo {
+  height: 90px; /* Increase the height of the logo */
+  width: 80px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between the logo and the text */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative; /* Allows positioning of text over the image */
+  height: 400px; /* Adjust the height of the hero section */
+  overflow: hidden; /* Ensures no content overflows the container */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the image span the full width */
+  height: 100%; /* Makes the image cover the entire height */
+  object-fit: cover; /* Ensures the image covers the container proportionally */
+  filter: blur(5px); /* Adds a blur effect to the image */
+  z-index: -1; /* Places the image behind the content */
+}
+
+.hero-content {
+  position: relative; /* Keeps the content above the blurred image */
+  color: rgb(8, 6, 6); /* Makes the text stand out */
+  text-align: center; /* Centers the content */
+  padding: 100px 20px; /* Adjusts spacing inside the hero section */
+  font-size: 1.8rem; /* Adjust the size of the text */
+}
+p {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.btn {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #ffdb4d;
+}
+
+/* Features Section */
+#facultyCount {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.features {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+/* Call to Action */
+.cta {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #00264d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
